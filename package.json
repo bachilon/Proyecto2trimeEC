@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm run build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -15,9 +17,7 @@
     "moment": "^2.29.1",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1",
-    "vuesax": "^4.0.1-alpha.25"
-  },
-  "devDependencies": {
+    "vuesax": "^4.0.1-alpha.25",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
